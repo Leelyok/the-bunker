@@ -1,0 +1,301 @@
+/* 
+- dark green  - 1C2A2C
+- footer dark - 24282B
+
+font-family: 'Raleway', sans-serif;
+300;0,400;0,500;0,900; (normal and italic)
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  Temporary Styles */
+
+/* {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+}
+
+html,
+body {
+    border: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    border: 2px solid rgb(109, 44, 44);
+}*/
+
+
+/*   End temporary styles*/
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+
+
+.padded     { padding: 5%;   }
+.padded-0    { padding: 0;   }
+.padded-lg  { padding: 10%;  }
+.padded-1   { padding: 1rem; }
+.padded-2   { padding: 2rem; }
+
+.margin-b-0  { margin-bottom: 0;}
+
+
+.bg-featured { background-color: #1C2A2C;  }
+.bg-dark     { background-color: #24282B;  }
+
+.light-text  { color: white;   }
+
+
+.left     {  text-align: left;   }
+.center   {  text-align: center; }
+.right    {  text-align: right;  }
+
+
+/*  Typography */
+
+body {
+    font-family: 'Raleway', sans-serif;
+   /* max-width: 1200px;
+    margin: auto;*/
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 4rem;}
+.text-xl {    font-size: 7rem; }
+
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
+.not-bold {
+    font-weight: 400;
+}
+
+.subtle {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+p, li {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+p:last-child,
+li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+header a {
+  text-decoration: none; 
+  color: inherit; 
+  padding: 0.5rem;
+  display: inline-block;
+  font-weight: 200;
+}
+
+
+a:hover {
+    color: #4e91ad
+}
+
+.fab {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+header {
+    padding: 1% 5%;}
+
+/*  Header & Humburger Menu    */
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 2;
+  }
+  
+  /* Styles when the hamburger button is active  */
+  .hamburger-button.active {
+    color: white;
+  }
+  
+  
+  .mobile-menu {
+    display: none; 
+    background-color: rgb(72, 75, 76); 
+    color: white;
+    padding: 5%;
+    position: fixed; 
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align: center;
+  }
+  
+  
+  .mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+
+
+/*  Footer */
+footer h2 {
+    font-size: 6rem;
+    line-height: 1;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+}
+
+
+/* Background Images */
+
+.bg-image {
+    background-color: #24282B;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/the-bunker-1.jpg');
+}
+
+.bg-roof {
+    background-image: url('/images/the-bunker-5.jpg');
+}
+.bg-bed {
+    background-image: url('/images/the-bunker-1.jpg');
+}
+.bg-hallway {
+    background-image: url('/images/the-bunker-3.jpg');
+}
+.bg-lounge {
+    background-image: url('/images/the-bunker-4.jpg');
+}
+.bg-lounge-2 {
+    background-image: url('/images/the-bunker-2.jpg');
+}
+.bg-sheets {
+    background-image: url('/images/the-bunker-7.jpg');
+}
+.bg-map {
+    background-image: url('/images/the-bunker-6.png');
+}
+
+.bg-padded {
+    padding-bottom: 30%;
+}
+
+.social-banner {
+    background-position: 50% 17%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+  }
+
+/* Default Responsive Styles (Dekstop and below) */
+.mob-show {
+    display: none; 
+  }
+
+
+/*   Explore page  */
+
+.explore-page h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.explore-page a {
+    display: block;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border: 1px solid;
+    margin-bottom: 1    rem;
+    text-decoration: none;
+}
+
+
+.explore-page .featured {
+    background-color: tan;
+    color: #24282b;
+}
+
+
+/*  max-width in pixels approximately 768 */
+@media(max-width: 48em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+
+ .flex-flip-sm { flex-direction: column-reverse;}
+
+ h1 {
+    font-size: 3rem;}
+.text-xl {    font-size: 4rem; }
+
+ 
+
+h1 { font-size: 4rem;}
+
+footer h2 { font-size: 3rem;}
+
+.social-banner {
+    background-image: none;
+    background-color: #1C2A2C;
+    min-height: 30vh;
+}
+
+.tiny-sm {
+    font-weight: 400;
+}
+
+}
